@@ -21,6 +21,7 @@ a {
     padding: 20px;
     position: relative;
     width: 100%;
+    z-index: 1000;
 }
 
 body{
@@ -79,6 +80,24 @@ body{
     background-position: center bottom;
     background-repeat: no-repeat;
     margin: 0;
+    animation-name: imgSlideDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes imgSlideDown {
+    from{
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .grey{
@@ -87,6 +106,25 @@ body{
     flex-direction: column;
     justify-content: center;
     padding: 60px;
+
+    animation-name: nameSlideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes nameSlideIn {
+    from{
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .grey h1{

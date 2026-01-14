@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Franklin Gothic l', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    background: url("proj-bg.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.h1-proj{
+    background-color: gainsboro;
+    padding: 10px 20px 10px 20px;
+    max-width: 100px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.portfolio {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-width: 1000px;
+    background-color: black;
+    color: white;
+    border-radius: 20%;
+    padding: 40px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.img-port img {
+    border-radius: 50% 10% 50% 10%;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.port-info {
+    max-width: 500px;
+    background-color: gainsboro;
+    color: black;
+    border-radius: 20%;
+    padding: 20px;
+}
+
+.check-btn{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.check-btn:hover{
+    padding: 15px 30px 15px 30px;
+    font-size: medium;
+}
+
+.Notebook{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-width: 1000px;
+    background-color: gainsboro;
+    color: black;
+    border-radius: 20%;
+    padding: 40px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.note-info{
+    max-width: 500px;
+    background-color: black;
+    color: white;
+    border-radius: 20%;
+    padding: 20px;
+}
+
+.note-btn{
+    background-color: gainsboro;
+    color: black;
+}
+
+.more{
+    background-color: gainsboro;
+    color: black;
+    border-radius: 20px;
+    max-width: 150px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        margin-top: 10px;
+    }
+
+    .portfolio,
+    .Notebook {
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .port-info,
+    .note-info {
+        max-width: 100%;
+    }
+
+    .img-port img {
+        width: 280px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
