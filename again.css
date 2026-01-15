@@ -789,6 +789,8 @@ ul {
         background-repeat: no-repeat;
         width: 100%;
         min-height: 100svh;
+        position: relative;
+        overflow: hidden;
     }
 
     h1 {
@@ -830,7 +832,7 @@ ul {
     }
 
     .mobname {
-        width: 75%;
+        width: 80%;
         color: white;
         margin: 0;
         position: relative;
