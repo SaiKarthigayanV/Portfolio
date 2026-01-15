@@ -822,7 +822,7 @@ ul {
         border-width: 1px;
         border-style: solid;
         border-color: gainsboro;
-        transform: translateY(40px);
+        transform: translateY(100px);
     }
 
     .mob-flex {
