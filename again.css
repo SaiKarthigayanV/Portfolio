@@ -814,6 +814,7 @@ ul {
 
     .dummy2 {
         display: inline-block;
+        position: absolute;
         height: 147px;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.5);
@@ -835,7 +836,6 @@ ul {
         width: 80%;
         color: white;
         margin: 0;
-        position: relative;
         /* ← important */
     }
 
